@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewFlag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:cropToPadding="false"
+        android:contentDescription="" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="0dp"
+        android:id="@+id/cityTv"
+        android:layout_alignBottom="@+id/imageViewFlag"
+        android:layout_toRightOf="@+id/capitalTitle"
+        android:layout_toEndOf="@+id/capitalTitle"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="Capital:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/capitalTitle"
+        android:layout_marginLeft="105dp"
+        android:layout_marginStart="105dp"
+        android:layout_alignBaseline="@+id/cityTv"
+        android:layout_alignBottom="@+id/cityTv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/provinceTv"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/capitalTitle"
+        android:layout_alignStart="@+id/capitalTitle"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
